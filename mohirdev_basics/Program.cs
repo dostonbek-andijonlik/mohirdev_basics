@@ -97,32 +97,23 @@
 //Console.WriteLine($"Divisioning {firstNumber / secondNumber}");
 //Console.WriteLine($"Left {firstNumber % secondNumber}");
 
-//Console.Write("Enter first number: ");
-//string firstNumberAsString = Console.ReadLine();
-//int firstNumber = Convert.ToInt32(firstNumberAsString);
+Console.Write("Enter first number: ");
+string firstNumberAsString = Console.ReadLine();
+int firstNumber = Convert.ToInt32(firstNumberAsString);
 
 
-//Console.Write("Enter second number: ");
-//string secondNumberAsString = Console.ReadLine();
-//int secondNumber = Convert.ToInt32(secondNumberAsString);
+Console.Write("Enter second number: ");
+string secondNumberAsString = Console.ReadLine();
+int secondNumber = Convert.ToInt32(secondNumberAsString);
+
+Console.WriteLine($"The first Number is greater than or equals to the second number: {firstNumber >= secondNumber}");
+Console.WriteLine($"The first Number is less than or equals to the second number: {firstNumber <= secondNumber}");
+Console.WriteLine($"The first Number equals to the second number: {firstNumber == secondNumber}");
+Console.WriteLine($"The first Number is not equals to the second number: {firstNumber != secondNumber}");
+Console.WriteLine($"The first Number is greter than or equals to the second number: {firstNumber %= secondNumber}");
 
 //Console.WriteLine($"Adding {firstNumber + secondNumber}");
 //Console.WriteLine($"Subtracting {firstNumber - secondNumber}");
 //Console.WriteLine($"Multiplying {firstNumber * secondNumber}");
 //Console.WriteLine($"Divisioning {firstNumber / secondNumber}");
 //Console.WriteLine($"Modulus  {firstNumber % secondNumber}");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
