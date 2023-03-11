@@ -3,7 +3,7 @@ namespace mohirdev_basics
 {
     class Program
     {
-        static void Main(string[] args)
+        static void NotMain(string[] args)
         {
 
             //string user = "New User. How old are you?";
@@ -126,17 +126,149 @@ namespace mohirdev_basics
             //Console.WriteLine($"Divisioning {firstNumber / secondNumber}");
             //Console.WriteLine($"Modulus  {firstNumber % secondNumber}");
 
-            int number = 21;
-            if (number <= 1) {
-                Console.WriteLine("This is a negative number.");
-            }
-            else if (number >= 2) {
-                Console.WriteLine("This is positive number");
-            }
-            else {
-                Console.WriteLine("This is zero.");
-                    };
 
+            //Console.Write("Enter your name: ");
+            //string name = Console.ReadLine();
+            //string greeting = $"Hello, {name}";
+            //Console.WriteLine(greeting);
+            //Console.Write("Enter your age: ");
+            //string ageAsString = Console.ReadLine();
+            //Console.WriteLine("Converting...");
+            //int age = int.Parse(ageAsString);
+            //Console.WriteLine($"Successfully converted!{age}");
+            //int keschasAge = 3;
+            //int ageDiff = age - keschasAge;
+
+            //Console.WriteLine($"The difference between your and Kescha's age is {ageDiff}");
+
+            //if(age > keschasAge)
+            //{
+            //    Console.WriteLine($"You are older than Kescha");
+            //}
+            //else if(age == keschasAge)
+            //{
+            //    Console.WriteLine("You are equal");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You are younger.");
+            //}
+
+            //if(age < keschasAge)
+            //{
+            //    Console.WriteLine("You are younger");
+            //}
+            //else if(age == keschasAge)
+            //{
+            //    Console.WriteLine("You are equals");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You are greater");
+            //}
+
+
+            //Console.Write("Enter first number: ");
+            //int firstNum = int.Parse(Console.ReadLine());
+            //Console.Write("Enter second number: ");
+            //int secondNum = int.Parse(Console.ReadLine());
+            //string message =
+            //    !(firstNum >= 0) 
+            //        ? $"{firstNum} and {secondNum} are positive numbers!"
+            //        : $"{firstNum} and/or {secondNum} are negative numbers!";
+            //Console.WriteLine(message);
+
+
+            //if (firstNum >= 0)
+            //{
+            //    Console.WriteLine($"{firstNum} is positive!");
+            //}
+
+            //else if(secondNum >= 0)
+            //{
+            //    Console.WriteLine($"{secondNum} is positive!");
+            //}
+
+            //Kescha's age with ternary operator.
+            //Console.Write("Enter your name: ");
+            //string name = Console.ReadLine();
+            //string greeting = $"Hello, {name}";
+            //Console.WriteLine(greeting);
+            //Console.Write("Enter your age: ");
+            //string ageAsString = Console.ReadLine();
+            //Console.WriteLine("Converting...");
+            //int age = int.Parse(ageAsString);
+            //Console.WriteLine($"Successfully converted!{age}");
+            //int keschasAge = 3;
+            //int ageDiff = age - keschasAge;
+
+            //string message =
+            //    age >= keschasAge
+            //        ? $"You are greater. The difference of your age is {ageDiff}"
+            //        : $"You are younger. The difference of your age is {ageDiff}";
+            //Console.WriteLine(message);
+
+            string password = "";
+
+            do
+            {
+                Console.Write("Enter your password to continue: ");
+                password = Console.ReadLine();
+            }while (password != "secretpassword");
+            //Kescha's age with logical operators.
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+            string greeting = $"Hello, {name}";
+            Console.WriteLine(greeting);
+            Console.Write("Enter your age: ");
+            string ageAsString = Console.ReadLine();
+            Console.WriteLine("Converting...");
+            int age = int.Parse(ageAsString);
+            Console.WriteLine($"Successfully converted! {age}");
+            int keschasAge = 3;
+            int ageDiff = age - keschasAge;
+            Console.WriteLine($"Your age difference is {ageDiff}");
+
+            //string messageAnd =
+            //    age >= 0 && keschasAge >= 0
+            //        ? $"Years are not negative"
+            //        : $"Years are not positive";
+            //Console.WriteLine(messageAnd);
+
+            //string messageOr =
+            //    age >= 0 || keschasAge <= 0
+            //        ? $"Years are not negative"
+            //        : $"At least one year is negative";
+            //Console.WriteLine(messageOr);
+
+            //string messageNot =
+            //    !(ageDiff <= 0)
+            //        ? "Years difference is positive"
+            //        : "Years difference is negative!";
+            //Console.WriteLine(messageNot);
+
+            Console.WriteLine("Let me tell you about my friends.");
+            //string[] friends = { "Anna", "Jackob", "Paul" };
+            string[] friends = new string[3];
+            friends[0] = "Anna";
+            friends[1] = "Jackob";
+            friends[2] = "Paul";
+            //Console.WriteLine(friends[0]);
+            int[] friendsAge = { 23, 24, 23 };
+            string[] address = { "London", "Paris", "Lisbon"};
+            //Console.WriteLine($"{friends[0]}'s age is {friendsAge[0]}. {friends[0]} is from {address[0]}");
+            //Console.WriteLine($"{friends[1]}'s age is {friendsAge[1]}. {friends[1]} is from {address[1]}");
+            //Console.WriteLine($"{friends[2]}'s age is {friendsAge[2]}. {friends[2]} is from {address[2]}");
+
+            //foreach (string friendName in friends)
+            //{
+            //    Console.WriteLine(friendName);
+            //}
+
+            for(int iteration = 0; iteration < friends.Length; iteration++)
+            {
+                Console.WriteLine($"{friends[iteration]}'s age is {friendsAge[iteration]}. {friends[0]} is from {address[0]}");
+            }
 
         }
     }
